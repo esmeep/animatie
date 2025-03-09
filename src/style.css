@@ -1,13 +1,31 @@
 /* font-family: "Poppins", sans-serif;*/
 
 body {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.grid {
+  display: grid;
+  grid-gap: 30px; /* Ruimte tussen de kolommen */
+  margin: 0 auto; /* Centraal uitlijnen */
+  text-align: left;
+}
+.grid-2-colums {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-colums {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
 /* Header styling */
 header {
   width: 100%;
@@ -21,7 +39,7 @@ header {
   padding: 80px 0;
 }
 
-h1 {
+header h1 {
   font-family: "Poppins", sans-serif;
   font-size: 96px;
   font-weight: 700;
@@ -29,7 +47,7 @@ h1 {
   margin: 10px 0;
 }
 
-h3 {
+header h3 {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -37,7 +55,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-button {
+header button {
   background-color: white;
   color: #272044;
   border: none;
@@ -53,6 +71,32 @@ button:hover {
   background-color: pink;
 }
 
+/*Img and Paragraf*/
+main {
+  background-color: white;
+}
+main img {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+main h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #272044;
+  margin: 0;
+}
+main p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #272044;
+}
+
 /* Grid voor video's */
 .video-grid {
   display: grid;
@@ -60,7 +104,6 @@ button:hover {
   gap: 20px;
   width: 80%;
   margin: auto;
-  margin-top: 100vh; /* Zorgt ervoor dat de video's pas na de achtergrondvideo beginnen */
 }
 
 .video-grid iframe {
@@ -78,20 +121,8 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  gap: 30px; /* Ruimte tussen de kolommen */
-  margin: 0 auto; /* Centraal uitlijnen */
-  text-align: left;
-}
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 footer h3 {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -140,5 +171,9 @@ footer a {
   .grid {
     gap: 20px;
     margin: 10px;
+    grid-template-columns: 1fr;
+  }
+  section {
+    padding: 30px;
   }
 }
