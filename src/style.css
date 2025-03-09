@@ -1,11 +1,18 @@
+/* font-family: "Poppins", sans-serif;*/
+
 body {
   background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 /* Header styling */
 header {
   width: 100%;
   margin: 0auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(39, 32, 68, 0.7), rgba(0, 0, 0, 0.5)),
     url("../beeld/in-droomproducties.avif");
   background-size: cover;
   background-position: center;
@@ -15,14 +22,18 @@ header {
 }
 
 h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 96px;
+  font-weight: 700px;
   color: white;
-  font-size: 50px;
   margin: 10px 0;
 }
 
 h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 400px;
   color: white;
-  font-size: 24px;
   margin-bottom: 20px;
 }
 
@@ -30,7 +41,7 @@ button {
   background-color: white;
   color: #272044;
   border: none;
-  padding: 15px 30px;
+  padding: 16px 32px;
   font-size: 18px;
   cursor: pointer;
   border-radius: 5px;
@@ -39,7 +50,7 @@ button {
 }
 
 button:hover {
-  background-color: #;
+  background-color: pink;
 }
 
 /* Grid voor video's */
@@ -55,4 +66,63 @@ button:hover {
 .video-grid iframe {
   width: 100%;
   height: 300px;
+}
+
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../beeld/Toy-Story-still-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700px;
+}
+footer p li {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h3 {
+    font-size: 20px;
+  }
+  button {
+    padding: 10px 24px;
+  }
 }
