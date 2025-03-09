@@ -9,9 +9,11 @@ body {
   margin: 0 auto;
 }
 section {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section.sacondary {
+  background: #f8f8f8;
 }
 .grid {
   display: grid;
@@ -23,7 +25,13 @@ section {
   grid-template-columns: 1fr 1fr;
 }
 .grid-3-colums {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-3-colums-first-nerow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.text-center {
+  text-align: center;
 }
 
 /* Header styling */
@@ -96,7 +104,22 @@ main p {
   line-height: 100%;
   color: #272044;
 }
-
+/*cards*/
+.sacondary h2 {
+  font-family: "Poppins", sans-serif;
+  opacity: 30%;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 5px;
+}
+.sacondary h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+.card {
+  background-color: white;
+}
 /* Grid voor video's */
 .video-grid {
   display: grid;
